@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5034BCA20E958AD0032037A /* TableauController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5034BC920E958AD0032037A /* TableauController.swift */; };
 		E537B71F20E6CC7A00E105F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E537B71E20E6CC7A00E105F3 /* AppDelegate.swift */; };
-		E537B72120E6CC7A00E105F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E537B72020E6CC7A00E105F3 /* ViewController.swift */; };
 		E537B72420E6CC7A00E105F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E537B72220E6CC7A00E105F3 /* Main.storyboard */; };
 		E537B72620E6CC7C00E105F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E537B72520E6CC7C00E105F3 /* Assets.xcassets */; };
 		E537B72920E6CC7C00E105F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E537B72720E6CC7C00E105F3 /* LaunchScreen.storyboard */; };
+		E5D57E1820E9643E00667948 /* Chanson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D57E1720E9643E00667948 /* Chanson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E5034BC920E958AD0032037A /* TableauController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableauController.swift; sourceTree = "<group>"; };
 		E537B71B20E6CC7A00E105F3 /* Youtube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Youtube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E537B71E20E6CC7A00E105F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E537B72020E6CC7A00E105F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E537B72320E6CC7A00E105F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E537B72520E6CC7C00E105F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E537B72820E6CC7C00E105F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E537B72A20E6CC7C00E105F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5D57E1720E9643E00667948 /* Chanson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chanson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +56,10 @@
 		E537B71D20E6CC7A00E105F3 /* Youtube */ = {
 			isa = PBXGroup;
 			children = (
+				E5034BC920E958AD0032037A /* TableauController.swift */,
 				E537B71E20E6CC7A00E105F3 /* AppDelegate.swift */,
-				E537B72020E6CC7A00E105F3 /* ViewController.swift */,
 				E537B72220E6CC7A00E105F3 /* Main.storyboard */,
+				E5D57E1720E9643E00667948 /* Chanson.swift */,
 				E537B72520E6CC7C00E105F3 /* Assets.xcassets */,
 				E537B72720E6CC7C00E105F3 /* LaunchScreen.storyboard */,
 				E537B72A20E6CC7C00E105F3 /* Info.plist */,
@@ -135,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E537B72120E6CC7A00E105F3 /* ViewController.swift in Sources */,
+				E5034BCA20E958AD0032037A /* TableauController.swift in Sources */,
 				E537B71F20E6CC7A00E105F3 /* AppDelegate.swift in Sources */,
+				E5D57E1820E9643E00667948 /* Chanson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +291,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-0---Youtube---cre-ation-du-projet.Youtube";
+				PRODUCT_BUNDLE_IDENTIFIER = "-1---Youtube---UITableView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,7 +309,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-0---Youtube---cre-ation-du-projet.Youtube";
+				PRODUCT_BUNDLE_IDENTIFIER = "-1---Youtube---UITableView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
