@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,6 +22,43 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q7k-9u-ss3">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChansonCell" rowHeight="161" id="UB9-xI-fJA" customClass="ChansonCell" customModule="Youtube" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="161"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UB9-xI-fJA" id="m2U-dg-8cY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="160.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="53s-9r-0GW">
+                                                    <rect key="frame" x="8" y="5.5" width="150" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="6BK-4a-VbK"/>
+                                                        <constraint firstAttribute="width" constant="150" id="Qkj-2V-ACL"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWO-sR-KNp">
+                                                    <rect key="frame" x="166" y="16" width="194" height="129"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vWO-sR-KNp" firstAttribute="leading" secondItem="53s-9r-0GW" secondAttribute="trailing" constant="8" id="A08-s0-UcH"/>
+                                                <constraint firstItem="53s-9r-0GW" firstAttribute="centerY" secondItem="m2U-dg-8cY" secondAttribute="centerY" id="C8P-Y9-brF"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vWO-sR-KNp" secondAttribute="bottom" constant="5" id="aqs-nO-Txx"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="vWO-sR-KNp" secondAttribute="trailing" id="ojz-gu-Ogd"/>
+                                                <constraint firstItem="53s-9r-0GW" firstAttribute="leading" secondItem="m2U-dg-8cY" secondAttribute="leading" constant="8" id="qPD-ag-IcE"/>
+                                                <constraint firstItem="vWO-sR-KNp" firstAttribute="top" secondItem="m2U-dg-8cY" secondAttribute="topMargin" constant="5" id="vnO-tg-OtD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="artisteEtTitreLabel" destination="vWO-sR-KNp" id="CaL-4q-yau"/>
+                                            <outlet property="miniature" destination="53s-9r-0GW" id="kx4-a1-bX9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055.2" y="117.39130434782609"/>
+            <point key="canvasLocation" x="1519" y="-169"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bl2-7R-vqn">
@@ -58,6 +96,13 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYr-y7-JpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="268" y="117"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="VJK-en-r9v">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="Lvn-vD-MAy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oe1-6f-s25" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>

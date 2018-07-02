@@ -16,6 +16,9 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
     // Création d'un tableau reprenant la classe Chanson
     var chansons = [Chanson]()
     
+    // Création de l'identifiant de cellule
+    let identifiantCell = "ChansonCell"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,17 +31,38 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
 
     
-    // Fonction pour afficher le nombre de ligne dans le tableau
+    
+    
+    // Protocole pour afficher le nombre de ligne dans le tableau
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Retourner le nombre de chansons dans le tableau
         return chansons.count
     }
     
-    // Fonction pour notifier au TableView pour quelle cellule il va devoir renvoyer les informations
+    // Protocole pour notifier au TableView pour quelle cellule il va devoir renvoyer les informations
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // Renvoiune TableViewCell vide
+        // Récupérer la chanson en question dans le tableau avec la ligne (row) de l'index
+        let chanson = chansons[indexPath.row]
+        // Si la cellule sélectionnée appartient à la TableViewCell identifiée (identifiantCell = "ChansonCell") avec (as?) la mise en forme ChansonCell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: identifiantCell) as? ChansonCell {
+        // Créér une cellule personnalisée par rapport à : chanson = chansons[indexPath.row]
+        cell.creerCell(chanson)
+        // Retourner la cellule
+        return cell
+        }
+        
+        // Retour un Table View Cell vide
         return UITableViewCell()
+        
     }
+    
+    
+    // Protocole pour définir la hauteur des cellules
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    // Retourne une hauteur de 170
+    return 170
+    }
+    
     
     
 
