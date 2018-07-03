@@ -14,8 +14,15 @@ class Chanson {
     private var _titre: String
     private var _code: String
     private var _baseUrlVideo = "https://www.youtube.com/embed/"
-    private var _baseUrlMiniature = "https://i.ytimg.com/vi/"
-    private var _finUrlMiniature = "/maxresdefault.jpg"
+    private var _baseUrlMiniature = "http://i.ytimg.com/vi/"
+    private var _finUrlMiniature = "/hqdefault.jpg" // max : HD,
+    
+    // maxresdefault.jpg = 1920 x 1080 px
+    // sddefault.jpg = 640 x 480 px
+    // hqdefault.jpg = 480 x 360 px
+    // mqdefault.jpg = 320 x 180 px
+    // default.jpg = 120 x 90 px
+    // 0.jpg = 480 x 360 px
     
     var artiste: String { return _artiste }
     var titre: String { return _titre }

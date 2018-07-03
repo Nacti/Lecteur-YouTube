@@ -28,6 +28,9 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
         tableView.dataSource = self
         // Ajout de la fonction ajouterChanson
         ajouterChanson()
+        // Ajouter un titre au Navigation Controller
+        title = "Mes vidéos préférées"
+        
     }
 
     
@@ -60,7 +63,7 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
     // Protocole pour définir la hauteur des cellules
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     // Retourne une hauteur de 170
-    return 170
+    return 130
     }
     
     
@@ -70,9 +73,9 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
         // S'assurer que le tableau chansons est vide
         chansons = [Chanson]()
         // Création des chansons
-        let cool = Chanson(artiste: "PARIS COMBO", titre: "Living Room", code: "hptx-ofa5Uo")
+        let cool = Chanson(artiste: "PARIS COMBO", titre: "Je te vois partout", code: "uLSDhkEbM2I")
         let bien = Chanson(artiste: "ORLY CHAP", titre: "L'amour avec un gros tas", code: "_4n6bfa_lss")
-        let basique = Chanson(artiste: "ADDIDESCH", titre: "Mettre à poil", code: "wC_jcEDVPys&t=3s")
+        let basique = Chanson(artiste: "ADDIDESCH", titre: "Mettre à poil", code: "wC_jcEDVPys")
         let ronde = Chanson(artiste: "CHARLENE DUVAL", titre: "Svelte", code: "Rk_LXM5Cvr4")
         let san = Chanson(artiste: "INA ICH", titre: "Arme armée", code: "SVQKth1ZVGU")
         let seul = Chanson(artiste: "LARA FABIAN", titre: "Je suis malade", code: "bIIL5p7_WKk")

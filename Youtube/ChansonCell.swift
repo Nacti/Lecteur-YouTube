@@ -33,7 +33,8 @@ class ChansonCell: UITableViewCell {
     func creerCell(_ chanson: Chanson) {
     // Récupération chanson tenant correspondant à la variable créée au début de la classe ChansonCell
     self.chanson = chanson
-        
+    // Ajout de la fonction telechagerImage
+    telechargerImage()        
     // Création de la configuration de la première ligne correspondant au titre de la chanson
         let premiereLigne = NSMutableAttributedString(string: self.chanson.titre, attributes: [.font: UIFont.boldSystemFont(ofSize: 28), .foregroundColor: UIColor.black])
     // Création de la configuration de la seconde ligne correspondant à un retour à la ligne (\n) ainsi que de l'artiste
@@ -46,4 +47,35 @@ class ChansonCell: UITableViewCell {
     }
     
     
+    func telechargerImage() {
+        // Mettre le logo (image importée) si jamais l'image n'est plus disponible sur internet
+        miniature.image = #imageLiteral(resourceName: "73 - Logo")
+        // Vérifie que la constante juste créer est une URL renvoyer un string correspondant au champs miniatureUrl créé dans Chanson.swift
+        if let url = URL(string: self.chanson.miniatureUrl) {
+        // Récupérer les données depuis l'adresse URL
+        let adresseURL = URLSession.shared
+        // Création de la tache récupérant une donnée par rapport à l'adresse URL
+        let task = adresseURL.dataTask(with: url, completionHandler: { (data, response, error) in
+        // S'il il y a une donnée data, création de l'image par rapport imageData
+        if let imageData = data, let image = UIImage(data: imageData) {
+        // Synchronisation de image avec la miniature
+        DispatchQueue.main.async {
+        self.miniature.image = image
+        }
+        }
+        })
+        // Si pas de réponse, on arrete la requete
+        task.resume()
+        }
+        }
+    
+    
 }
+
+
+
+
+
+
+
+

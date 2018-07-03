@@ -58,6 +58,7 @@
 		E537B71D20E6CC7A00E105F3 /* Youtube */ = {
 			isa = PBXGroup;
 			children = (
+				E537B72A20E6CC7C00E105F3 /* Info.plist */,
 				E5034BC920E958AD0032037A /* TableauController.swift */,
 				E537B71E20E6CC7A00E105F3 /* AppDelegate.swift */,
 				E537B72220E6CC7A00E105F3 /* Main.storyboard */,
@@ -65,7 +66,6 @@
 				E5D57E1720E9643E00667948 /* Chanson.swift */,
 				E537B72520E6CC7C00E105F3 /* Assets.xcassets */,
 				E537B72720E6CC7C00E105F3 /* LaunchScreen.storyboard */,
-				E537B72A20E6CC7C00E105F3 /* Info.plist */,
 			);
 			path = Youtube;
 			sourceTree = "<group>";
@@ -295,7 +295,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-3---Youtube---UITableViewCell";
+				PRODUCT_BUNDLE_IDENTIFIER = "-4---Youtube---Te-lecharges-des-images-depuis-internet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,7 +313,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-3---Youtube---UITableViewCell";
+				PRODUCT_BUNDLE_IDENTIFIER = "-4---Youtube---Te-lecharges-des-images-depuis-internet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
