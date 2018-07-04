@@ -14,6 +14,7 @@
 		E537B72920E6CC7C00E105F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E537B72720E6CC7C00E105F3 /* LaunchScreen.storyboard */; };
 		E590406820EAC9190060140F /* ChansonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E590406720EAC9190060140F /* ChansonCell.swift */; };
 		E5D57E1820E9643E00667948 /* Chanson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D57E1720E9643E00667948 /* Chanson.swift */; };
+		E5E59D9A20ED467E00EB748C /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E59D9920ED467E00EB748C /* VideoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E537B72A20E6CC7C00E105F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E590406720EAC9190060140F /* ChansonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChansonCell.swift; sourceTree = "<group>"; };
 		E5D57E1720E9643E00667948 /* Chanson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chanson.swift; sourceTree = "<group>"; };
+		E5E59D9920ED467E00EB748C /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				E537B72220E6CC7A00E105F3 /* Main.storyboard */,
 				E590406720EAC9190060140F /* ChansonCell.swift */,
 				E5D57E1720E9643E00667948 /* Chanson.swift */,
+				E5E59D9920ED467E00EB748C /* VideoController.swift */,
 				E537B72520E6CC7C00E105F3 /* Assets.xcassets */,
 				E537B72720E6CC7C00E105F3 /* LaunchScreen.storyboard */,
 			);
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E59D9A20ED467E00EB748C /* VideoController.swift in Sources */,
 				E5034BCA20E958AD0032037A /* TableauController.swift in Sources */,
 				E537B71F20E6CC7A00E105F3 /* AppDelegate.swift in Sources */,
 				E590406820EAC9190060140F /* ChansonCell.swift in Sources */,
@@ -295,7 +299,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-4---Youtube---Te-lecharges-des-images-depuis-internet";
+				PRODUCT_BUNDLE_IDENTIFIER = "-5---Youtube---Passer-des-donne-es-vers-un-autre-UIView-Controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,7 +317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-4---Youtube---Te-lecharges-des-images-depuis-internet";
+				PRODUCT_BUNDLE_IDENTIFIER = "-5---Youtube---Passer-des-donne-es-vers-un-autre-UIView-Controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

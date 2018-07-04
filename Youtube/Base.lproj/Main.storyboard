@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChansonCell" rowHeight="161" id="UB9-xI-fJA" customClass="ChansonCell" customModule="Youtube" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ChansonCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChansonCell" rowHeight="161" id="UB9-xI-fJA" customClass="ChansonCell" customModule="Youtube" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="161"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UB9-xI-fJA" id="m2U-dg-8cY">
@@ -73,11 +73,27 @@
                     <navigationItem key="navigationItem" id="hwW-xO-MMp"/>
                     <connections>
                         <outlet property="tableView" destination="Q7k-9u-ss3" id="5k8-U4-wST"/>
+                        <segue destination="Vtz-7r-OLL" kind="show" identifier="VersVideo" id="dxv-AO-c4l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1519" y="-169"/>
+            <point key="canvasLocation" x="-106" y="-197"/>
+        </scene>
+        <!--Video Controller-->
+        <scene sceneID="x7k-ZE-Uwb">
+            <objects>
+                <viewController id="Vtz-7r-OLL" customClass="VideoController" customModule="Youtube" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pmx-UP-jQI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nOv-da-vnH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exX-rq-euQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="-188"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bl2-7R-vqn">
@@ -95,14 +111,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYr-y7-JpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="268" y="117"/>
-        </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="VJK-en-r9v">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="Lvn-vD-MAy" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Oe1-6f-s25" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
+            <point key="canvasLocation" x="-844" y="-196"/>
         </scene>
     </scenes>
 </document>
