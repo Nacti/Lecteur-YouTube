@@ -61,14 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				E537B72A20E6CC7C00E105F3 /* Info.plist */,
-				E5034BC920E958AD0032037A /* TableauController.swift */,
-				E537B71E20E6CC7A00E105F3 /* AppDelegate.swift */,
-				E537B72220E6CC7A00E105F3 /* Main.storyboard */,
-				E590406720EAC9190060140F /* ChansonCell.swift */,
 				E5D57E1720E9643E00667948 /* Chanson.swift */,
+				E590406720EAC9190060140F /* ChansonCell.swift */,
+				E5034BC920E958AD0032037A /* TableauController.swift */,
 				E5E59D9920ED467E00EB748C /* VideoController.swift */,
-				E537B72520E6CC7C00E105F3 /* Assets.xcassets */,
+				E537B72220E6CC7A00E105F3 /* Main.storyboard */,
 				E537B72720E6CC7C00E105F3 /* LaunchScreen.storyboard */,
+				E537B72520E6CC7C00E105F3 /* Assets.xcassets */,
+				E537B71E20E6CC7A00E105F3 /* AppDelegate.swift */,
 			);
 			path = Youtube;
 			sourceTree = "<group>";
@@ -299,7 +299,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-5---Youtube---Passer-des-donne-es-vers-un-autre-UIView-Controller";
+				PRODUCT_BUNDLE_IDENTIFIER = "-6---Youtube---Jouer-une-video-avec-son-URL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,7 +317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-5---Youtube---Passer-des-donne-es-vers-un-autre-UIView-Controller";
+				PRODUCT_BUNDLE_IDENTIFIER = "-6---Youtube---Jouer-une-video-avec-son-URL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -35,8 +35,4 @@ class ClassChanson {
         self._code = code
     }
     
-    
-    
-    
-    
 }

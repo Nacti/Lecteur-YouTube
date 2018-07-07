@@ -4,7 +4,7 @@
 //
 //  Created by Cédric PETERSEN on 01/07/2018.
 //  Copyright © 2018 Cédric PETERSEN. All rights reserved.
-//
+// 
 
 import UIKit
 
@@ -13,7 +13,7 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     @IBOutlet weak var tableView: UITableView!
     
-    // Création d'un tableau reprenant la classe Chanson
+    // Création d'un tableau vide reprenant la classe Chanson
     var tableauChansons = [ClassChanson]()
     
     // Création de l'identifiant de cellule
@@ -70,6 +70,9 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     
+    
+    
+    
     // Protocole indiquant qu'une ligne a été sélectionnée
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Récupérer la chanson en question dans le tableau avec la ligne (row) de l'index
@@ -77,6 +80,11 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
         // Indique au Segue qu'il faut lire la vidéo de la chanson
        performSegue(withIdentifier: identifiantSegue, sender: ligneChanson)
     }
+    
+    
+    
+    
+    
     // Indique au View Controler que le Segue va lui demande de s'ouvrir
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
          // Si l'idendifiant du Segue correspond bien à "VersVideo"
@@ -91,6 +99,10 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     
 
+    
+    
+    
+    
     func ajouterChanson() {
         // S'assurer que le tableau chansons est vide
         tableauChansons = [ClassChanson]()
